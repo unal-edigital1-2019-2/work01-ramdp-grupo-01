@@ -1,16 +1,16 @@
 ﻿# ELECTRÓNICA DIGITAL 1 2019 -2 UNIVERSIDAD NACIONAL DE COLOMBIA 
 ## Integrantes
-*Sebastian Ruiz Torres-1032504363
-*Juan González
-*Julián Pulido
+* Sebastian Ruiz Torres-1032504363
+* Juan González
+* Julián Pulido
 ## Elementos a usar durante el proyecto
-Tarjeta Nexys4
-AW=17
-DW=16
-Tamaño RAM= 2,097,152 bits =262144 Bytes
-Imagen 320*240 formato RGB
-Tamaño Imagen= 1,128,800 bits =141100 Bytes
-prueba de edición
+* Tarjeta Nexys4
+* AW=17
+* DW=16
+* Tamaño RAM= 2,097,152 bits =262144 Bytes
+* Imagen 320*240 formato RGB
+* Tamaño Imagen= 1,128,800 bits =141100 Bytes
+* prueba de edición
 ## Semana01-proyecto
 
 El presente documento consta de los avances de de la primera entrega del proyecto, correspondiente a la semana 1 y que consta de la resolución de 3 preguntas y la ejecución de un testbench.
