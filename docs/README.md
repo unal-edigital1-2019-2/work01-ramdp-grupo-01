@@ -22,4 +22,10 @@ Partiendo que se va a utilizar la FPGA Nexys 4 que cuenta con una memoria de  2,
 El formato que mejor se acopla para los intereses propuestos es RGB556 y el tamaño es de 320x240 píxeles, esto, con la finalidad de utilizar solo 
 el 54%(aproximadamente de la memoria), esto permitiría utilizar un 48% de la memoria restante para poder realizar las diferentes tareas de procesamiento de la imagen.
 
+## pregunta 3
+
+    • Para habilitar el formato y el escalado de la cámara usaremos el registro COM7[2]=1, COM[0]=0 para la salida del formato RGB.
+    • Para el tamaño de la imagen completa usaremos el registro COM4[5:4]=10 ya que el tamaño total será ¼ de la ventana generada por la cámara.
+    • El registro COM15 [5:4]=01 ya que el formato completo de la barra de colores a utilizar es RGB 565.
+
 
