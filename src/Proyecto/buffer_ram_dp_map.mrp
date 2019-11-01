@@ -1,4 +1,4 @@
-Release 14.6 Map P.68d (nt)
+Release 14.6 Map P.68d (nt64)
 Xilinx Mapping Report File for Design 'buffer_ram_dp'
 
 Design Information
@@ -10,7 +10,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Fri Nov 01 01:56:43 2019
+Mapped Date    : Fri Nov 01 21:51:22 2019
 
 Design Summary
 --------------
@@ -89,9 +89,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                28.93
 
-Peak Memory Usage:  609 MB
-Total REAL time to MAP completion:  46 secs 
-Total CPU time to MAP completion:   40 secs 
+Peak Memory Usage:  4955 MB
+Total REAL time to MAP completion:  1 mins 15 secs 
+Total CPU time to MAP completion:   56 secs 
 
 Table of Contents
 -----------------

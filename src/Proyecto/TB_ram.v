@@ -76,7 +76,7 @@ module TB_ram;
 					#1 data_in=data_in+1;
 	end 
 //------------------------Lectura de los nuevos datos----------------------------
-//Lee los datos cada 2 flancos de bajada
+//Lee los datos cada 2 flancos de subida
 //Lee los datos de los registros 0 a 149
 //si la memoria esta bien de 0 a 99 estaran los datos escritos en la parte anterior
 //y de 100 a 149 estaran los datos que posee la memoria por defecto

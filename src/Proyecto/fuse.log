@@ -1,5 +1,5 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Julian Pulido/Documents/GitHub/work01-ramdp-grupo-01/src/Proyecto/TB_ram_isim_beh.exe" -prj "C:/Users/Julian Pulido/Documents/GitHub/work01-ramdp-grupo-01/src/Proyecto/TB_ram_beh.prj" "work.TB_ram" "work.glbl" 
-ISim P.68d (signature 0x7708f090)
+Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Julian Pulido/Documents/GitHub/work01-ramdp-grupo-01/src/Proyecto/TB_ram_isim_beh.exe -prj C:/Users/Julian Pulido/Documents/GitHub/work01-ramdp-grupo-01/src/Proyecto/TB_ram_beh.prj work.TB_ram work.glbl 
+ISim P.68d (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
@@ -8,12 +8,11 @@ Analyzing Verilog file "C:/Users/Julian Pulido/Documents/GitHub/work01-ramdp-gru
 Analyzing Verilog file "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
+Fuse Memory Usage: 140236 KB
+Fuse CPU Usage: 343 ms
 Compiling module buffer_ram_dp_default
 Compiling module TB_ram
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 3 Verilog Units
-Built simulation executable C:/Users/Julian Pulido/Documents/GitHub/work01-ramdp-grupo-01/src/Proyecto/TB_ram_isim_beh.exe
-Fuse Memory Usage: 28356 KB
-Fuse CPU Usage: 624 ms
+ERROR:Simulator:861 - Failed to link the design
