@@ -57,27 +57,37 @@ module TB_ram;
 
 #100;
 //-------------------------Lectura de los valores por defecto---------------------
+//Lee los datos cada medio ciclo de reloj
+//Lee los datos de los registros 0 a 99
         regread=1;
-	for (addr_out = 0; addr_out <150 ; addr_out = addr_out + 1) begin
+	for (addr_out = 0; addr_out <100 ; addr_out = addr_out + 1) begin
 				 #1 $display("el valor de memoria %d =  %d", addr_out,data_out) ;
 	end 
  //--------------------------Escritura de datos-------------------------------------
+ //Escribe los datos cada flanco de bajada
+ //Escribe los datos de los registros 0 a 100
 		  regread=0;
 		  regwrite=1;
 		  data_in=234;
 		  addr_out=0;
 		  addr_in=0;
-	for (addr_in = 0; addr_in <150 ; addr_in = addr_in + 1) begin
-				 #1 $display("escirbir en la memoria %d  el valor de %d", addr_in,data_in);
-				 #2 data_in=data_in+1;
+		for (addr_in = 0; addr_in <100 ; addr_in = addr_in + 1) begin//Escribe 
+					#1 $display("escirbir en la memoria %d  el valor de %d", addr_in,data_in);
+					#1 data_in=data_in+1;
 	end 
 //------------------------Lectura de los nuevos datos----------------------------
-	addr_out=0;
+//Lee los datos cada 2 flancos de bajada
+//Lee los datos de los registros 0 a 149
+//si la memoria esta bien de 0 a 99 estaran los datos escritos en la parte anterior
+//y de 100 a 149 estaran los datos que posee la memoria por defecto
+		 data_in=0;
+		 addr_out=0;
 		 addr_in=0;
-		  regread=1;
-		  regwrite=0;
+		 regread=1;
+		 regwrite=0;
 	for (addr_out = 0; addr_out <150 ; addr_out = addr_out + 1) begin
-				 #1 $display("el valor de memoria %d =  %d", addr_out,data_out) ;
+	@(posedge clk) #1	
+	#1 $display("el valor de memoria %d =  %d", addr_out,data_out) ;
 	end 
 
 	end
