@@ -24,6 +24,10 @@ el 54%(aproximadamente de la memoria), esto permitiría utilizar un 48% de la me
 
 ## pregunta 3
 
+* El registro COM[3]=1, activa escaldo.
+* Para activar la barra de color se usan los registros COM17[7:6]=10, COM7[1]=1.
+* Para el test de patrón: SCALING_XSC[7]=1 y SCALING_YSC[7]=0.
+* EL registro COM12[7]=1 siempre estará activo.
 * Para habilitar el formato y el escalado de la cámara usaremos el registro COM7[2]=1, COM[0]=0 para la salida del formato RGB.
 * Para el tamaño de la imagen completa usaremos el registro COM4[5:4]=10 ya que el tamaño total será ¼ de la ventana generada por la cámara.
 * El registro COM15 [5:4]=01 ya que el formato completo de la barra de colores a utilizar es RGB 565.
